@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<States>
+  <!--PLEASE ENTER DISTRICT OR CIRCLE IN ALPHABETIC ORDER....By Uma Shankar-->
+    
+    <State Code="1" Name="Jharkhand">
+      <District Code="-1" Name="Select District">Select District</District>
+      <District Code="0" Name="Ranchi">DbConRanchi</District>
+      <District Code="0" Name="East Singhbhum">DbConEastSinghbhum</District>
+      <District Code="0" Name="Select District">Ranchi</District>
+      <District Code="0" Name="Select District">Ranchi</District>
+        <District Code="0" Name="Select District">Ranchi</District>
+        <District Code="0" Name="Select District">Ranchi</District>
+      <District Code="0" Name="Select District">Ranchi</District>
+      <District Code="0" Name="Select District">Ranchi</District>
+        <District Code="0" Name="Select District">Ranchi</District>
+        <District Code="0" Name="Select District">Ranchi</District>
+        <District Code="0" Name="Select District">Ranchi</District>
+        <District Code="0" Name="Select District">Ranchi</District>
+        <District Code="0" Name="Select District">Ranchi</District>
+        <District Code="0" Name="Select District">Ranchi</District>
+        <District Code="0" Name="Select District">Ranchi</District>
+        <District Code="0" Name="Select District">Ranchi</District>
+        <District Code="0" Name="Select District">Ranchi</District>
+        <District Code="0" Name="Select District">Ranchi</District>
+        <District Code="0" Name="Select District">Ranchi</District>
+        <District Code="0" Name="Select District">Ranchi</District>
+        <District Code="0" Name="Select District">Ranchi</District>
+        <District Code="0" Name="Select District">Ranchi</District>
+        <District Code="0" Name="Select District">Ranchi</District>
+        <District Code="0" Name="Select District">Ranchi</District>
+      
+    <District Code="100" Name="State">
+      
+      <Circle Code="1"  Name="Bihar">Status_ROR</Circle>
+    </District>
+    <District Code="101" Name="Additional collector">
+      
+      <Circle Code="7"  Name="Araria">Status_ROR</Circle>
+      <Circle Code="38"  Name="Arwal">Status_ROR</Circle>
+       <Circle Code="34"  Name="Aurangabad">Status_ROR</Circle>
+      <Circle Code="23"  Name="Banka">Status_ROR</Circle>
+      <Circle Code="20"  Name="Begusarai">Status_ROR</Circle>
+      <Circle Code="22"  Name="Bhagalpur">Status_ROR</Circle>
+      <Circle Code="29"  Name="Bhojpur">Status_ROR</Circle>
+      <Circle Code="30"  Name="Buxar">Status_ROR</Circle>
+      <Circle Code="13"  Name="Darbhanga">Status_ROR</Circle>
+      <Circle Code="2"  Name="East Champaran">Status_ROR</Circle>
+      <Circle Code="35"  Name="Gaya">Status_ROR</Circle>
+      <Circle Code="15"  Name="Gopalganj">Status_ROR</Circle>
+      <Circle Code="37"  Name="Jamui">Status_ROR</Circle>
+      <Circle Code="33"  Name="Jehanabad">Status_ROR</Circle>
+      <Circle Code="31"  Name="Kaimur">Status_ROR</Circle>
+      <Circle Code="10"  Name="Katihar">Status_ROR</Circle>
+      <Circle Code="21"  Name="Khagaria">Status_ROR</Circle>
+      <Circle Code="8"  Name="Kishanganj">Status_ROR</Circle>
+      <Circle Code="25"  Name="Lakhisarai">Status_ROR</Circle>
+      <Circle Code="11"  Name="Madhepura">Status_ROR</Circle>
+      <Circle Code="5"  Name="Madhubani">Status_ROR</Circle>
+      <Circle Code="24"  Name="Munger">Status_ROR</Circle>
+      <Circle Code="14"  Name="Muzaffarpur">Status_ROR</Circle>
+      <Circle Code="1"  Name="Nalanda">Status_ROR</Circle>
+      <Circle Code="36"  Name="Nawada">Status_ROR</Circle>
+      <Circle Code="28"  Name="Patna">Status_ROR</Circle>
+      <Circle Code="9"  Name="Purnea">Status_ROR</Circle>
+      <Circle Code="32"  Name="Rohtas">Status_ROR</Circle>
+      <Circle Code="12"  Name="Saharasa">Status_ROR</Circle>
+      <Circle Code="19"  Name="Samastipur">Status_ROR</Circle>
+      <Circle Code="17"  Name="Saran">Status_ROR</Circle>
+      <Circle Code="26"  Name="Sheikhpura">Status_ROR</Circle>
+      <Circle Code="3"  Name="Sheohar">Status_ROR</Circle>
+      <Circle Code="4"  Name="Sitamarhi">Status_ROR</Circle>
+      <Circle Code="16"  Name="Siwan">Status_ROR</Circle>
+      <Circle Code="6"  Name="Supaul">Status_ROR</Circle>
+      <Circle Code="18"  Name="Vaishali">Status_ROR</Circle>
+      <Circle Code="27"  Name="West Champaran">Status_ROR</Circle>
+    </District>
+    <District Code="7" Name="Araria">
+      <Circle Code="-1"  Name="Select_Circle" ></Circle>
+      <Circle Code="1"  Name="Araria_Sadar" >DBConnAraria_Sadar</Circle>
+      <Circle Code="2"  Name="Jokihat" >DBConnAraria_Jokihat</Circle>
+      <Circle Code="3"  Name="Palasi" >DBConnAraria_Palasi</Circle>
+      <Circle Code="4"  Name="Sikti" >DBConnAraria_Sikti</Circle>
+      <Circle Code="9"  Name=" Bhargamaj " >DBConnAraria_Bhargamaj</Circle>
+      <Circle Code="6"  Name=" Forbesganj " >DBConnAraria_Forbesganj</Circle>
+      <Circle Code="5"  Name=" Kursakatta " >DBConnAraria_Kursakatta</Circle>
+      <Circle Code="8"  Name=" Narpatganj" >DBConnAraria_Narpatganj</Circle>
+      <Circle Code="7"  Name=" Raniganj " >DBConnAraria_Raniganj</Circle>
+
+    </District>
+   
+
+
+  </State>
+
+</States>

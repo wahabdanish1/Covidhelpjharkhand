@@ -1,0 +1,646 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{77483D84-0368-43AF-AEF1-85E3024C644A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Covidhelp</RootNamespace>
+    <AssemblyName>Covidhelp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\demo.css" />
+    <Content Include="assets\css\docs.min.css" />
+    <Content Include="assets\css\docsearch.min.css" />
+    <Content Include="assets\css\material-kit.mind1f1.css" />
+    <Content Include="assets\css\sweetalert.css" />
+    <Content Include="assets\css\vertical-nav.css" />
+    <Content Include="assets\demo\demo.js" />
+    <Content Include="assets\demo\modernizr.js" />
+    <Content Include="assets\demo\vertical-nav.css" />
+    <Content Include="assets\demo\vertical-nav.js" />
+    <Content Include="assets\img\bg6.jpg" />
+    <Content Include="assets\js\buttons.js" />
+    <Content Include="assets\js\demo.js" />
+    <Content Include="assets\js\material-kit.mind1f1.js" />
+    <Content Include="assets\js\plugins\bootstrap-selectpicker.js" />
+    <Content Include="assets\js\plugins\bootstrap-tagsinput.js" />
+    <Content Include="assets\js\plugins\buttons.js" />
+    <Content Include="assets\js\plugins\jasny-bootstrap.min.js" />
+    <Content Include="assets\js\plugins\jquery.flexisel.js" />
+    <Content Include="assets\js\sweetalert.js" />
+    <Content Include="assets\js\vertical-nav.js" />
+    <Content Include="bokaro.aspx" />
+    <Content Include="buttons.github.io\buttons.js" />
+    <Content Include="chatra.aspx" />
+    <Content Include="deoghar.aspx" />
+    <Content Include="dhanbad.aspx" />
+    <Content Include="dumka.aspx" />
+    <Content Include="EastSinghbhum.aspx" />
+    <Content Include="garhwa.aspx" />
+    <Content Include="giridih.aspx" />
+    <Content Include="Godda.aspx" />
+    <Content Include="gumla.aspx" />
+    <Content Include="hazaribagh.aspx" />
+    <Content Include="jamtara.aspx" />
+    <Content Include="khunti.aspx" />
+    <Content Include="koderma.aspx" />
+    <Content Include="latehar.aspx" />
+    <Content Include="lohardaga.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CovidHelp.Master" />
+    <Content Include="assets\css\material-kit.css.map" />
+    <Content Include="assets\js\material-kit.js.map" />
+    <Content Include="assets\scss\material-kit.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\bootstrap-grid.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\bootstrap-reboot.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\bootstrap.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_alert.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_background-variant.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_badge.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_border-radius.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_box-shadow.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_breakpoints.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_buttons.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_caret.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_clearfix.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_float.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_forms.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_gradients.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_grid-framework.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_grid.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_hover.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_image.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_list-group.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_lists.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_nav-divider.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_navbar-align.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_pagination.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_reset-text.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_resize.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_screen-reader.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_size.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_table-row.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_text-emphasis.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_text-hide.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_text-truncate.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_transition.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\mixins\_visibility.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\utilities\_align.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\utilities\_background.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\utilities\_borders.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\utilities\_clearfix.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\utilities\_display.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\utilities\_embed.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\utilities\_flex.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\utilities\_float.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\utilities\_position.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\utilities\_screenreaders.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\utilities\_sizing.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\utilities\_spacing.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\utilities\_text.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\utilities\_visibility.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_alert.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_badge.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_breadcrumb.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_button-group.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_buttons.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_card.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_carousel.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_close.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_code.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_custom-forms.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_dropdown.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_forms.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_functions.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_grid.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_images.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_input-group.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_jumbotron.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_list-group.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_media.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_mixins.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_modal.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_nav.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_navbar.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_pagination.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_popover.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_print.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_progress.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_reboot.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_root.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_tables.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_tooltip.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_transitions.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_type.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_utilities.scss" />
+    <Content Include="assets\scss\material-kit\bootstrap\scss\_variables.scss" />
+    <Content Include="assets\scss\material-kit\cards\_card-carousel.scss" />
+    <Content Include="assets\scss\material-kit\cards\_card-login.scss" />
+    <Content Include="assets\scss\material-kit\cards\_card-plain.scss" />
+    <Content Include="assets\scss\material-kit\mixins\_alert.scss" />
+    <Content Include="assets\scss\material-kit\mixins\_animations.scss" />
+    <Content Include="assets\scss\material-kit\mixins\_breakpoints.scss" />
+    <Content Include="assets\scss\material-kit\mixins\_buttons.scss" />
+    <Content Include="assets\scss\material-kit\mixins\_colored-shadows.scss" />
+    <Content Include="assets\scss\material-kit\mixins\_drawer.scss" />
+    <Content Include="assets\scss\material-kit\mixins\_forms.scss" />
+    <Content Include="assets\scss\material-kit\mixins\_hover.scss" />
+    <Content Include="assets\scss\material-kit\mixins\_layout.scss" />
+    <Content Include="assets\scss\material-kit\mixins\_navbar-colors.scss" />
+    <Content Include="assets\scss\material-kit\mixins\_navs.scss" />
+    <Content Include="assets\scss\material-kit\mixins\_type.scss" />
+    <Content Include="assets\scss\material-kit\mixins\_utilities.scss" />
+    <Content Include="assets\scss\material-kit\plugins\_plugin-datetime-picker.scss" />
+    <Content Include="assets\scss\material-kit\plugins\_plugin-nouislider.scss" />
+    <Content Include="assets\scss\material-kit\variables\_body.scss" />
+    <Content Include="assets\scss\material-kit\variables\_bootstrap-material-design-base.scss" />
+    <Content Include="assets\scss\material-kit\variables\_bootstrap-material-design.scss" />
+    <Content Include="assets\scss\material-kit\variables\_brand.scss" />
+    <Content Include="assets\scss\material-kit\variables\_buttons.scss" />
+    <Content Include="assets\scss\material-kit\variables\_card.scss" />
+    <Content Include="assets\scss\material-kit\variables\_carousel.scss" />
+    <Content Include="assets\scss\material-kit\variables\_code.scss" />
+    <Content Include="assets\scss\material-kit\variables\_colors-map.scss" />
+    <Content Include="assets\scss\material-kit\variables\_colors.scss" />
+    <Content Include="assets\scss\material-kit\variables\_custom-forms.scss" />
+    <Content Include="assets\scss\material-kit\variables\_drawer.scss" />
+    <Content Include="assets\scss\material-kit\variables\_dropdown.scss" />
+    <Content Include="assets\scss\material-kit\variables\_forms.scss" />
+    <Content Include="assets\scss\material-kit\variables\_layout.scss" />
+    <Content Include="assets\scss\material-kit\variables\_list-group.scss" />
+    <Content Include="assets\scss\material-kit\variables\_menu.scss" />
+    <Content Include="assets\scss\material-kit\variables\_modals.scss" />
+    <Content Include="assets\scss\material-kit\variables\_nav.scss" />
+    <Content Include="assets\scss\material-kit\variables\_pagination.scss" />
+    <Content Include="assets\scss\material-kit\variables\_shadow.scss" />
+    <Content Include="assets\scss\material-kit\variables\_snackbar.scss" />
+    <Content Include="assets\scss\material-kit\variables\_spacing.scss" />
+    <Content Include="assets\scss\material-kit\variables\_state.scss" />
+    <Content Include="assets\scss\material-kit\variables\_tables.scss" />
+    <Content Include="assets\scss\material-kit\variables\_tooltip.scss" />
+    <Content Include="assets\scss\material-kit\variables\_type.scss" />
+    <Content Include="assets\scss\material-kit\_alerts.scss" />
+    <Content Include="assets\scss\material-kit\_badges.scss" />
+    <Content Include="assets\scss\material-kit\_buttons.scss" />
+    <Content Include="assets\scss\material-kit\_cards.scss" />
+    <Content Include="assets\scss\material-kit\_carousel.scss" />
+    <Content Include="assets\scss\material-kit\_checkboxes.scss" />
+    <Content Include="assets\scss\material-kit\_core-bootstrap.scss" />
+    <Content Include="assets\scss\material-kit\_custom-forms.scss" />
+    <Content Include="assets\scss\material-kit\_drawer.scss" />
+    <Content Include="assets\scss\material-kit\_dropdown.scss" />
+    <Content Include="assets\scss\material-kit\_example-pages.scss" />
+    <Content Include="assets\scss\material-kit\_footers.scss" />
+    <Content Include="assets\scss\material-kit\_forms.scss" />
+    <Content Include="assets\scss\material-kit\_headers.scss" />
+    <Content Include="assets\scss\material-kit\_images.scss" />
+    <Content Include="assets\scss\material-kit\_info-areas.scss" />
+    <Content Include="assets\scss\material-kit\_input-group.scss" />
+    <Content Include="assets\scss\material-kit\_layout.scss" />
+    <Content Include="assets\scss\material-kit\_list-group.scss" />
+    <Content Include="assets\scss\material-kit\_misc.scss" />
+    <Content Include="assets\scss\material-kit\_mixins.scss" />
+    <Content Include="assets\scss\material-kit\_modal.scss" />
+    <Content Include="assets\scss\material-kit\_nav.scss" />
+    <Content Include="assets\scss\material-kit\_navbar.scss" />
+    <Content Include="assets\scss\material-kit\_pagination.scss" />
+    <Content Include="assets\scss\material-kit\_pills.scss" />
+    <Content Include="assets\scss\material-kit\_popover.scss" />
+    <Content Include="assets\scss\material-kit\_progress.scss" />
+    <Content Include="assets\scss\material-kit\_radios.scss" />
+    <Content Include="assets\scss\material-kit\_reboot.scss" />
+    <Content Include="assets\scss\material-kit\_responsive.scss" />
+    <Content Include="assets\scss\material-kit\_ripples.scss" />
+    <Content Include="assets\scss\material-kit\_switches.scss" />
+    <Content Include="assets\scss\material-kit\_tabs.scss" />
+    <Content Include="assets\scss\material-kit\_togglebutton.scss" />
+    <Content Include="assets\scss\material-kit\_tooltip.scss" />
+    <Content Include="assets\scss\material-kit\_type.scss" />
+    <Content Include="assets\scss\material-kit\_variables.scss" />
+    <Content Include="westsinghbhum.aspx" />
+    <None Include="Properties\PublishProfiles\CovidHelpJharkhand.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\material-kit.css" />
+    <Content Include="assets\css\material-kit.min.css" />
+    <Content Include="assets\demo\demo.css" />
+    <Content Include="assets\img\apple-icon.png" />
+    <Content Include="assets\img\arrow-left.cur" />
+    <Content Include="assets\img\arrow-left.png" />
+    <Content Include="assets\img\arrow-right.cur" />
+    <Content Include="assets\img\arrow-right.png" />
+    <Content Include="assets\img\bg.jpg" />
+    <Content Include="assets\img\bg2.jpg" />
+    <Content Include="assets\img\bg3.jpg" />
+    <Content Include="assets\img\bg7.jpg" />
+    <Content Include="assets\img\city-profile.jpg" />
+    <Content Include="assets\img\city.jpg" />
+    <Content Include="assets\img\examples\clem-onojegaw.jpg" />
+    <Content Include="assets\img\examples\clem-onojeghuo.jpg" />
+    <Content Include="assets\img\examples\cynthia-del-rio.jpg" />
+    <Content Include="assets\img\examples\mariya-georgieva.jpg" />
+    <Content Include="assets\img\examples\olu-eletu.jpg" />
+    <Content Include="assets\img\examples\studio-1.jpg" />
+    <Content Include="assets\img\examples\studio-2.jpg" />
+    <Content Include="assets\img\examples\studio-3.jpg" />
+    <Content Include="assets\img\examples\studio-4.jpg" />
+    <Content Include="assets\img\examples\studio-5.jpg" />
+    <Content Include="assets\img\faces\avatar.jpg" />
+    <Content Include="assets\img\faces\camp.jpg" />
+    <Content Include="assets\img\faces\card-profile1-square.jpg" />
+    <Content Include="assets\img\faces\card-profile2-square.jpg" />
+    <Content Include="assets\img\faces\card-profile4-square.jpg" />
+    <Content Include="assets\img\faces\card-profile5-square.jpg" />
+    <Content Include="assets\img\faces\card-profile6-square.jpg" />
+    <Content Include="assets\img\faces\christian.jpg" />
+    <Content Include="assets\img\faces\kendall.jpg" />
+    <Content Include="assets\img\faces\marc.jpg" />
+    <Content Include="assets\img\favicon.png" />
+    <Content Include="assets\img\landing.jpg" />
+    <Content Include="assets\img\profile.jpg" />
+    <Content Include="assets\img\profile_city.jpg" />
+    <Content Include="assets\img\responsive-nav.gif" />
+    <Content Include="assets\js\core\bootstrap-material-design.min.js" />
+    <Content Include="assets\js\core\jquery.min.js" />
+    <Content Include="assets\js\core\popper.min.js" />
+    <Content Include="assets\js\material-kit.js" />
+    <Content Include="assets\js\material-kit.min.js" />
+    <Content Include="assets\js\plugins\bootstrap-datetimepicker.js" />
+    <Content Include="assets\js\plugins\jquery.sharrre.js" />
+    <Content Include="assets\js\plugins\moment.min.js" />
+    <Content Include="assets\js\plugins\nouislider.min.js" />
+    <Content Include="default.aspx" />
+    <Content Include="App_Data\Determine_Database.xml" />
+    <Content Include="Disclaimer.aspx" />
+    <Content Include="District\ESS.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Home.aspx" />
+    <Content Include="pakur.aspx" />
+    <Content Include="palamu.aspx" />
+    <Content Include="ramgarh.aspx" />
+    <Content Include="Ranchi.aspx" />
+    <Content Include="sahebganj.aspx" />
+    <Content Include="saraikella.aspx" />
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="simdega.aspx" />
+    <Content Include="volunteer.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bokaro.aspx.cs">
+      <DependentUpon>bokaro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bokaro.aspx.designer.cs">
+      <DependentUpon>bokaro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="chatra.aspx.cs">
+      <DependentUpon>chatra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="chatra.aspx.designer.cs">
+      <DependentUpon>chatra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CovidHelp.Master.cs">
+      <DependentUpon>CovidHelp.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CovidHelp.Master.designer.cs">
+      <DependentUpon>CovidHelp.Master</DependentUpon>
+    </Compile>
+    <Compile Include="DA_Layer\DALayer.cs" />
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="deoghar.aspx.cs">
+      <DependentUpon>deoghar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="deoghar.aspx.designer.cs">
+      <DependentUpon>deoghar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dhanbad.aspx.cs">
+      <DependentUpon>dhanbad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dhanbad.aspx.designer.cs">
+      <DependentUpon>dhanbad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Disclaimer.aspx.cs">
+      <DependentUpon>Disclaimer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Disclaimer.aspx.designer.cs">
+      <DependentUpon>Disclaimer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="District\ESS.aspx.cs">
+      <DependentUpon>ESS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="District\ESS.aspx.designer.cs">
+      <DependentUpon>ESS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dumka.aspx.cs">
+      <DependentUpon>dumka.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dumka.aspx.designer.cs">
+      <DependentUpon>dumka.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EastSinghbhum.aspx.cs">
+      <DependentUpon>EastSinghbhum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EastSinghbhum.aspx.designer.cs">
+      <DependentUpon>EastSinghbhum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="garhwa.aspx.cs">
+      <DependentUpon>garhwa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="garhwa.aspx.designer.cs">
+      <DependentUpon>garhwa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="giridih.aspx.cs">
+      <DependentUpon>giridih.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="giridih.aspx.designer.cs">
+      <DependentUpon>giridih.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Godda.aspx.cs">
+      <DependentUpon>Godda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Godda.aspx.designer.cs">
+      <DependentUpon>Godda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gumla.aspx.cs">
+      <DependentUpon>gumla.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gumla.aspx.designer.cs">
+      <DependentUpon>gumla.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hazaribagh.aspx.cs">
+      <DependentUpon>hazaribagh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hazaribagh.aspx.designer.cs">
+      <DependentUpon>hazaribagh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jamtara.aspx.cs">
+      <DependentUpon>jamtara.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jamtara.aspx.designer.cs">
+      <DependentUpon>jamtara.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="khunti.aspx.cs">
+      <DependentUpon>khunti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="khunti.aspx.designer.cs">
+      <DependentUpon>khunti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="koderma.aspx.cs">
+      <DependentUpon>koderma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="koderma.aspx.designer.cs">
+      <DependentUpon>koderma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="latehar.aspx.cs">
+      <DependentUpon>latehar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="latehar.aspx.designer.cs">
+      <DependentUpon>latehar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lohardaga.aspx.cs">
+      <DependentUpon>lohardaga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lohardaga.aspx.designer.cs">
+      <DependentUpon>lohardaga.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pakur.aspx.cs">
+      <DependentUpon>pakur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pakur.aspx.designer.cs">
+      <DependentUpon>pakur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="palamu.aspx.cs">
+      <DependentUpon>palamu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="palamu.aspx.designer.cs">
+      <DependentUpon>palamu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ramgarh.aspx.cs">
+      <DependentUpon>ramgarh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ramgarh.aspx.designer.cs">
+      <DependentUpon>ramgarh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ranchi.aspx.cs">
+      <DependentUpon>Ranchi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ranchi.aspx.designer.cs">
+      <DependentUpon>Ranchi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sahebganj.aspx.cs">
+      <DependentUpon>sahebganj.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sahebganj.aspx.designer.cs">
+      <DependentUpon>sahebganj.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="saraikella.aspx.cs">
+      <DependentUpon>saraikella.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="saraikella.aspx.designer.cs">
+      <DependentUpon>saraikella.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="simdega.aspx.cs">
+      <DependentUpon>simdega.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="simdega.aspx.designer.cs">
+      <DependentUpon>simdega.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="volunteer.aspx.cs">
+      <DependentUpon>volunteer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="volunteer.aspx.designer.cs">
+      <DependentUpon>volunteer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="westsinghbhum.aspx.cs">
+      <DependentUpon>westsinghbhum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="westsinghbhum.aspx.designer.cs">
+      <DependentUpon>westsinghbhum.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1158</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1158/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

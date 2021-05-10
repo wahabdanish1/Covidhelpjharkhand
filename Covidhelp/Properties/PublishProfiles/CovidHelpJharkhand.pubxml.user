@@ -1,0 +1,916 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>G:\DOTNET Work _ Feb_2021\CovidHelp\Publish\10_05_2021</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>05/06/2021 10:33:30</publishTime>
+    </File>
+    <File Include="App_Data/Determine_Database.xml">
+      <publishTime>05/06/2021 17:09:25</publishTime>
+    </File>
+    <File Include="assets/css/demo.css">
+      <publishTime>05/07/2021 16:11:12</publishTime>
+    </File>
+    <File Include="assets/css/docs.min.css">
+      <publishTime>05/09/2021 00:36:32</publishTime>
+    </File>
+    <File Include="assets/css/docsearch.min.css">
+      <publishTime>05/09/2021 00:34:03</publishTime>
+    </File>
+    <File Include="assets/css/material-kit.css">
+      <publishTime>05/07/2021 16:05:06</publishTime>
+    </File>
+    <File Include="assets/css/material-kit.css.map">
+      <publishTime>05/07/2021 16:06:46</publishTime>
+    </File>
+    <File Include="assets/css/material-kit.min.css">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/css/material-kit.mind1f1.css">
+      <publishTime>05/08/2021 18:20:50</publishTime>
+    </File>
+    <File Include="assets/css/sweetalert.css">
+      <publishTime>05/10/2021 08:56:07</publishTime>
+    </File>
+    <File Include="assets/css/vertical-nav.css">
+      <publishTime>05/07/2021 16:11:12</publishTime>
+    </File>
+    <File Include="assets/demo/demo.css">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/demo/demo.js">
+      <publishTime>05/09/2021 00:39:45</publishTime>
+    </File>
+    <File Include="assets/demo/modernizr.js">
+      <publishTime>05/09/2021 00:46:50</publishTime>
+    </File>
+    <File Include="assets/demo/vertical-nav.css">
+      <publishTime>05/09/2021 00:47:30</publishTime>
+    </File>
+    <File Include="assets/demo/vertical-nav.js">
+      <publishTime>05/09/2021 00:46:50</publishTime>
+    </File>
+    <File Include="assets/img/apple-icon.png">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/arrow-left.cur">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/arrow-left.png">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/arrow-right.cur">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/arrow-right.png">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/bg.jpg">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/bg2.jpg">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/bg3.jpg">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/bg6.jpg">
+      <publishTime>07/07/2020 16:02:47</publishTime>
+    </File>
+    <File Include="assets/img/bg7.jpg">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/city-profile.jpg">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/city.jpg">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/examples/clem-onojegaw.jpg">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/examples/clem-onojeghuo.jpg">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/examples/cynthia-del-rio.jpg">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/examples/mariya-georgieva.jpg">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/examples/olu-eletu.jpg">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/examples/studio-1.jpg">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/examples/studio-2.jpg">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/examples/studio-3.jpg">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/examples/studio-4.jpg">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/examples/studio-5.jpg">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/faces/avatar.jpg">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/faces/camp.jpg">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/faces/card-profile1-square.jpg">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/faces/card-profile2-square.jpg">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/faces/card-profile4-square.jpg">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/faces/card-profile5-square.jpg">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/faces/card-profile6-square.jpg">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/faces/christian.jpg">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/faces/kendall.jpg">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/faces/marc.jpg">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/favicon.png">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/landing.jpg">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/profile.jpg">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/profile_city.jpg">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/img/responsive-nav.gif">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/js/buttons.js">
+      <publishTime>05/09/2021 00:49:14</publishTime>
+    </File>
+    <File Include="assets/js/core/bootstrap-material-design.min.js">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/js/core/jquery.min.js">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/js/core/popper.min.js">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/js/demo.js">
+      <publishTime>05/07/2021 16:14:18</publishTime>
+    </File>
+    <File Include="assets/js/material-kit.js">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/js/material-kit.js.map">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/js/material-kit.min.js">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/js/material-kit.mind1f1.js">
+      <publishTime>05/09/2021 00:40:30</publishTime>
+    </File>
+    <File Include="assets/js/plugins/bootstrap-datetimepicker.js">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/js/plugins/bootstrap-selectpicker.js">
+      <publishTime>05/09/2021 00:45:46</publishTime>
+    </File>
+    <File Include="assets/js/plugins/bootstrap-tagsinput.js">
+      <publishTime>05/09/2021 00:45:46</publishTime>
+    </File>
+    <File Include="assets/js/plugins/buttons.js">
+      <publishTime>05/09/2021 00:54:36</publishTime>
+    </File>
+    <File Include="assets/js/plugins/jasny-bootstrap.min.js">
+      <publishTime>05/09/2021 00:45:46</publishTime>
+    </File>
+    <File Include="assets/js/plugins/jquery.flexisel.js">
+      <publishTime>05/09/2021 00:45:46</publishTime>
+    </File>
+    <File Include="assets/js/plugins/jquery.sharrre.js">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/js/plugins/moment.min.js">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/js/plugins/nouislider.min.js">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/js/sweetalert.js">
+      <publishTime>05/10/2021 08:57:52</publishTime>
+    </File>
+    <File Include="assets/js/vertical-nav.js">
+      <publishTime>05/07/2021 16:14:18</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/bootstrap-grid.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/bootstrap-reboot.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/bootstrap.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_alert.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_background-variant.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_badge.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_border-radius.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_box-shadow.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_breakpoints.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_buttons.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_caret.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_clearfix.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_float.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_forms.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_gradients.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_grid-framework.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_grid.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_hover.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_image.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_list-group.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_lists.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_nav-divider.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_navbar-align.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_pagination.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_reset-text.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_resize.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_screen-reader.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_size.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_table-row.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_text-emphasis.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_text-hide.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_text-truncate.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_transition.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_visibility.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/utilities/_align.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/utilities/_background.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/utilities/_borders.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/utilities/_clearfix.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/utilities/_display.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/utilities/_embed.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/utilities/_flex.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/utilities/_float.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/utilities/_position.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/utilities/_screenreaders.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/utilities/_sizing.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/utilities/_spacing.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/utilities/_text.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/utilities/_visibility.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_alert.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_badge.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_breadcrumb.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_button-group.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_buttons.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_card.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_carousel.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_close.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_code.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_custom-forms.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_dropdown.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_forms.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_functions.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_grid.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_images.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_input-group.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_jumbotron.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_list-group.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_media.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_mixins.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_modal.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_nav.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_navbar.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_pagination.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_popover.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_print.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_progress.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_reboot.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_root.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_tables.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_tooltip.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_transitions.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_type.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_utilities.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_variables.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/cards/_card-carousel.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/cards/_card-login.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/cards/_card-plain.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/mixins/_alert.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/mixins/_animations.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/mixins/_breakpoints.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/mixins/_buttons.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/mixins/_colored-shadows.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/mixins/_drawer.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/mixins/_forms.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/mixins/_hover.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/mixins/_layout.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/mixins/_navbar-colors.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/mixins/_navs.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/mixins/_type.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/mixins/_utilities.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/plugins/_plugin-datetime-picker.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/plugins/_plugin-nouislider.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_body.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_bootstrap-material-design-base.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_bootstrap-material-design.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_brand.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_buttons.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_card.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_carousel.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_code.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_colors-map.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_colors.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_custom-forms.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_drawer.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_dropdown.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_forms.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_layout.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_list-group.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_menu.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_modals.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_nav.scss">
+      <publishTime>05/06/2021 10:55:34</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_pagination.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_shadow.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_snackbar.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_spacing.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_state.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_tables.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_tooltip.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_type.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_alerts.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_badges.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_buttons.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_cards.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_carousel.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_checkboxes.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_core-bootstrap.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_custom-forms.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_drawer.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_dropdown.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_example-pages.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_footers.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_forms.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_headers.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_images.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_info-areas.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_input-group.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_layout.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_list-group.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_misc.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_mixins.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_modal.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_nav.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_navbar.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_pagination.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_pills.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_popover.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_progress.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_radios.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_reboot.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_responsive.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_ripples.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_switches.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_tabs.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_togglebutton.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_tooltip.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_type.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_variables.scss">
+      <publishTime>05/06/2021 10:55:35</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>05/06/2021 10:33:30</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>05/10/2021 13:54:10</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>05/10/2021 13:54:10</publishTime>
+    </File>
+    <File Include="bin/Covidhelp.dll">
+      <publishTime>05/10/2021 13:53:57</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>12/07/2015 19:04:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>03/10/2016 14:26:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>03/09/2016 12:00:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>03/09/2016 11:57:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="bokaro.aspx">
+      <publishTime>05/10/2021 13:16:40</publishTime>
+    </File>
+    <File Include="buttons.github.io/buttons.js">
+      <publishTime>05/09/2021 00:56:47</publishTime>
+    </File>
+    <File Include="chatra.aspx">
+      <publishTime>05/10/2021 09:07:35</publishTime>
+    </File>
+    <File Include="CovidHelp.Master">
+      <publishTime>05/10/2021 12:56:10</publishTime>
+    </File>
+    <File Include="default.aspx">
+      <publishTime>05/09/2021 15:25:06</publishTime>
+    </File>
+    <File Include="deoghar.aspx">
+      <publishTime>05/10/2021 13:31:49</publishTime>
+    </File>
+    <File Include="dhanbad.aspx">
+      <publishTime>05/09/2021 16:26:16</publishTime>
+    </File>
+    <File Include="Disclaimer.aspx">
+      <publishTime>05/09/2021 00:02:25</publishTime>
+    </File>
+    <File Include="District/ESS.aspx">
+      <publishTime>05/06/2021 11:34:14</publishTime>
+    </File>
+    <File Include="dumka.aspx">
+      <publishTime>05/09/2021 16:27:04</publishTime>
+    </File>
+    <File Include="EastSinghbhum.aspx">
+      <publishTime>05/09/2021 16:28:10</publishTime>
+    </File>
+    <File Include="garhwa.aspx">
+      <publishTime>05/09/2021 19:24:15</publishTime>
+    </File>
+    <File Include="giridih.aspx">
+      <publishTime>05/09/2021 19:25:17</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/06/2021 10:33:08</publishTime>
+    </File>
+    <File Include="Godda.aspx">
+      <publishTime>05/09/2021 19:26:14</publishTime>
+    </File>
+    <File Include="gumla.aspx">
+      <publishTime>05/09/2021 19:26:58</publishTime>
+    </File>
+    <File Include="hazaribagh.aspx">
+      <publishTime>05/09/2021 19:27:42</publishTime>
+    </File>
+    <File Include="Home.aspx">
+      <publishTime>05/10/2021 08:00:00</publishTime>
+    </File>
+    <File Include="jamtara.aspx">
+      <publishTime>05/09/2021 19:28:35</publishTime>
+    </File>
+    <File Include="khunti.aspx">
+      <publishTime>05/09/2021 19:29:23</publishTime>
+    </File>
+    <File Include="koderma.aspx">
+      <publishTime>05/09/2021 19:30:00</publishTime>
+    </File>
+    <File Include="latehar.aspx">
+      <publishTime>05/09/2021 19:30:42</publishTime>
+    </File>
+    <File Include="lohardaga.aspx">
+      <publishTime>05/09/2021 19:31:24</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>05/06/2021 10:33:30</publishTime>
+    </File>
+    <File Include="pakur.aspx">
+      <publishTime>05/09/2021 19:32:04</publishTime>
+    </File>
+    <File Include="palamu.aspx">
+      <publishTime>05/09/2021 19:33:47</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>05/10/2021 13:54:01</publishTime>
+    </File>
+    <File Include="ramgarh.aspx">
+      <publishTime>05/09/2021 19:34:39</publishTime>
+    </File>
+    <File Include="Ranchi.aspx">
+      <publishTime>05/10/2021 13:47:37</publishTime>
+    </File>
+    <File Include="sahebganj.aspx">
+      <publishTime>05/09/2021 19:35:19</publishTime>
+    </File>
+    <File Include="saraikella.aspx">
+      <publishTime>05/09/2021 19:36:34</publishTime>
+    </File>
+    <File Include="scripts/ai.0.22.9-build00167.js">
+      <publishTime>05/06/2021 10:33:30</publishTime>
+    </File>
+    <File Include="scripts/ai.0.22.9-build00167.min.js">
+      <publishTime>05/06/2021 10:33:30</publishTime>
+    </File>
+    <File Include="simdega.aspx">
+      <publishTime>05/09/2021 19:36:35</publishTime>
+    </File>
+    <File Include="volunteer.aspx">
+      <publishTime>05/10/2021 13:22:53</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/10/2021 13:53:58</publishTime>
+    </File>
+    <File Include="westsinghbhum.aspx">
+      <publishTime>05/09/2021 19:37:39</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
